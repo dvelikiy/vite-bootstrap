@@ -28,26 +28,22 @@ body {
   }
 }
 
-.card-list {
-  display: flex;
-  gap: 10px;
-}
-
 .card {
   display: flex;
   height: 100px;
-  width: 292px;
   border-radius: 24px;
   overflow: hidden;
   background: #14151A;
   color: #FFF;
   font-size: 24px;
+  &--gems {
+    padding-left: 8px;
+  }
 }
 
 .card-content {
   padding: 16px;
 }
-
 
 .card-image  {
   border-radius: 24px;
@@ -60,7 +56,31 @@ body {
   gap: 8px;
 }
 
+.card-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .verified {
   width: 20px;
   height: 20px;
+}
+
+.gems {
+  color: #A4A5AA;
+}
+
+.gems-image {
+  width: 25px;
+}
+
+.people-image {
+  width: 25px;
+}
+
+.people-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
