@@ -1,0 +1,66 @@
+body {
+  background: url('/images/home-background.svg') repeat center center fixed, #0B0C11;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.header-logo {
+  width: 65px;
+}
+
+.header-button {
+  padding: 0;
+  border: 0;
+  height: 65px;
+  width: 65px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #FFF;
+  border-radius: 50%;
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.card-list {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  height: 100px;
+  width: 292px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #14151A;
+  color: #FFF;
+  font-size: 24px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+
+.card-image  {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.verified {
+  width: 20px;
+  height: 20px;
+}
