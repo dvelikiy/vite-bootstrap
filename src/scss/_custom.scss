@@ -168,11 +168,14 @@ body {
   border-radius: 24px;
   background: #006AE0;
   color:  #FFF;
-  font-size: 18px;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   &__left {
     flex-grow: 1;
     font-size: 24px;
+    padding-right: 8px;
+    @media screen and (max-width: 382px) {
+      font-size: 18px;
+    }
   }
   &__right {    
     position: relative;
@@ -185,8 +188,9 @@ body {
     &::after {
       content: '';
       position: absolute;
-      top: -19px;
+      top: 50%;
       left: 0;
+      transform: translateY(-50%);
       width: 2px;
       height: 66px;
       background: rgba(255, 255, 255, 0.25);
@@ -196,6 +200,9 @@ body {
 
 #countdown {
   font-size: 16px;
+  @media screen and (max-width: 382px) {
+    font-size: 12px;
+  }
 }
 
 .footer {
@@ -215,14 +222,32 @@ body {
     color: #FFF;
   }
   @media screen and (max-width: 503px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 382px) {
     font-size: 12px;
   }
   img {
     width: 32px;
     @media screen and (max-width: 503px) {
+      width: 21px;
+    }
+    @media screen and (max-width: 382px) {
       width: 16px;
     }
   }
+}
+
+.footer-item-image-wrapper {
+  display: flex;
+  align-items: center;
+  height: 32px;
+    @media screen and (max-width: 503px) {
+      height: 21px;
+    }
+    @media screen and (max-width: 382px) {
+      height: 16px;
+    }
 }
 
 .footer-logo {
@@ -235,6 +260,9 @@ body {
     width: 100%;
   }
   @media screen and (max-width: 503px) {
+    width: 57px;
+  }
+  @media screen and (max-width: 382px) {
     width: 42px;
   }
 }
@@ -249,7 +277,7 @@ body {
 }
 
 .swipe {
-  width: 50%;
+  width: 30%;
   height: 8px;
   background: #FFF;
   border-radius: 12px;
