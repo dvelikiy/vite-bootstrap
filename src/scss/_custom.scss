@@ -84,3 +84,55 @@ body {
   align-items: center;
   gap: 6px;
 }
+
+.main-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 142px;
+  margin-bottom: 142px;
+}
+
+.outer-circle {
+  padding: 42px;
+  border-radius: 50%;
+  background: rgba(18, 27, 42, 0.50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  @media screen and (max-width: 500px) {
+    padding: 24px;
+  }
+}
+
+.inner-circle {
+  padding: 42px;
+  border-radius: 50%;
+  background: #121B2A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  @media screen and (max-width: 500px) {
+    padding: 24px;
+  }
+}
+
+.main-button {
+  padding: 0;
+  border: 0;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #006AE0;
+
+  @media screen and (max-width: 500px) {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.main-button-image {
+  width: 60%;
+}
