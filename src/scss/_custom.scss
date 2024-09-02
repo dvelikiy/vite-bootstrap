@@ -113,7 +113,7 @@ body {
 .outer-circle {
   padding: 42px;
   border-radius: 50%;
-  background: rgba(18, 27, 42, 0.50);
+  // background: rgba(18, 27, 42, 0.50);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +126,7 @@ body {
 .inner-circle {
   padding: 42px;
   border-radius: 50%;
-  background: #121B2A;
+  // background: #121B2A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,6 +144,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   background: #006AE0;
+  animation: pulse-animation 2s infinite;
 
   @media screen and (max-width: 500px) {
     width: 180px;
@@ -303,4 +304,21 @@ body {
   border-radius: 12px;
   margin-top: 8px;
   margin-bottom: 12px;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    box-shadow: 0 0 0 84px rgba(255, 255, 255, 0);
+    transform: scale(1);
+    @media screen and (max-width: 500px) {
+      box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    }
+  }
 }
